@@ -41,7 +41,6 @@ const NewIssuePage = async () => {
     }
   });
 
-  await delay(2000);
   return (
     <div className="max-w-xl">
       {error && (
