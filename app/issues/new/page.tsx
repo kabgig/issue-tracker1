@@ -14,7 +14,7 @@ import { z } from "zod";
 
 type IssueForm = z.infer<typeof createIssueSchema>;
 
-const NewIssuePage = () => {
+const NewIssuePage = async () => {
   const {
     register,
     control,
@@ -37,6 +37,7 @@ const NewIssuePage = () => {
     }
   });
 
+  await delay(2000);
   return (
     <div className="max-w-xl">
       {error && (
@@ -69,3 +70,6 @@ const NewIssuePage = () => {
 };
 
 export default NewIssuePage;
+function delay(arg0: number) {
+  throw new Error("Function not implemented.");
+}
