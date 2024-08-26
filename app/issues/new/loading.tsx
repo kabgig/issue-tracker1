@@ -1,16 +1,3 @@
-import { Box } from "@radix-ui/themes";
-import { Skeleton } from "@/app/components";
+import IssueFormSkeleton from "../_components/IssueFormSkeleton";
 
-const LoadingNewIssuePage = () => {
-  return (
-    <Box className="max-w-xl">
-      <Skeleton />
-      <Skeleton height="20rem" />
-    </Box>
-  );
-};
-
-export default LoadingNewIssuePage;
-function delay(arg0: number) {
-  throw new Error("Function not implemented.");
-}
+export default IssueFormSkeleton;
