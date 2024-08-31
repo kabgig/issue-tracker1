@@ -1,8 +1,8 @@
+"use client";
 import { User } from "@prisma/client";
 import { Select } from "@radix-ui/themes";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { set } from "zod";
 
 const AssigneeSelect = () => {
   const [users, setUsers] = useState<User[]>([]);
@@ -14,6 +14,7 @@ const AssigneeSelect = () => {
     };
     fetchUsers();
   }, []);
+
   return (
     <Select.Root>
       <Select.Trigger placeholder="Assign ..." />
