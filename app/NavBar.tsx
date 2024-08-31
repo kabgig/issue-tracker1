@@ -57,7 +57,6 @@ const NavBar = () => {
 
           <Box>
             {status === "authenticated" && (
-              // <Link href="/api/auth/signout">Sign out</Link>
               <DropdownMenu.Root>
                 <DropdownMenu.Trigger>
                   <Avatar
@@ -66,6 +65,7 @@ const NavBar = () => {
                     size="2"
                     radius="full"
                     className="cursor-pointer"
+                    referrerPolicy="no-referrer"
                   />
                 </DropdownMenu.Trigger>
                 <DropdownMenu.Content>
